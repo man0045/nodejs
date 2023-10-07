@@ -9,6 +9,8 @@
   "author": "mannu chaurasiya",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
+    "node": "^20.2.0",
     "superheroes": "^3.0.0",
     "supervillains": "^3.1.0"
   }

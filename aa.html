@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <br>
+  Number 1:: <input type="number" name="aman" id="a">   
+  Number 1:: <input type="number" name="aman" id="b">   
+  Output :: <input type = "number" name = "sum" id="add difference multiply">
+  <button type="button" onclick="sum()">Sum</button>
+  <button type="button" onclick="difference()">difference</button>
+  <button type="button" onclick="multiply()">Multiply</button>
+ </from>
+ <script>
+  function sum(){
+   var a = document.getElementById("a").value;
+   var b = document.getElementById("b").value;
+   var c = parseInt(a) + parseInt(b);
+   var d = parseInt(a) - parseInt(b);
+   var e = parseInt(a) * parseInt(b);
+   document.getElementById("add").value = c;
+   document.getElementById("difference").value = d;
+   document.getElementById("multiply").value = e;
+
+  }
+ </script>
+</body>
+</html>

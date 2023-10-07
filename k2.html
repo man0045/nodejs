@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class=id="parent-id">
+    <p>Hello World 1</p>
+    <p class = "test" name = "mannuchaurasiya">hello World 2</p>
+    <p>hello world 3</p>
+    <p>Hello World 4</p>
+    </div>
+    <script>
+        const parentDOM = document.getElementById("parent-id");
+        const test = document.getElementsByClassName("test");
+        const test2 = document.getElementByName("name");
+        console.log(test2);
+        console.log(test);
+
+        const testTarget = parentDOM.getElementsByClassName("test")[0];
+        console.log(testTarget);
+    </script>
+</body>
+</html>
