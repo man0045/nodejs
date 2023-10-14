@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ remember
+</body>
+<script>
+ const requestUrl = 'https://api.github.com/users/man0045'
+ const hrx = new XMLHttpRequest();
+ hrx.open('GET', requestUrl)
+ hrx.onreadystatechange = function(){
+  console.log(hrx.readyState);
+  if(hrx.readyState === 4){
+   const data = JSON.parse(this.responseText)
+   console.log(typeof data);
+   console.log(data.followers);
+  }
+ }
+ hrx.send();`
+</script>
+</html>

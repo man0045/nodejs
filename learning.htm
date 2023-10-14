@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <h1>New learns</h1>
+ <button id="submit">Submit</button>
+</body>
+<script>
+ const name = function(){
+  console.log("New values Enhanced the functions along with their values")
+ }
+ const newname = function(){
+  document.querySelector('h1').innerHTML = "NEXT TO DO THE NEXT WORKS";
+ }
+ const changeMe = setTimeout(newname, 2000); 
+ document.querySelector('#submit').addEventListener('click', function(){
+  clearTimeout(changeMe)
+  console.log("STOPPEd")
+ })
+ setTimeout(newname, 2000)
+</script>
+</html>
